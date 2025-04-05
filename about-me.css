@@ -1,0 +1,47 @@
+.bg-white {
+    position: relative; /* Ensure the text appears above the image */
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data/Pranesh_Johanan.jpg');
+    background-size: cover; /* Make the image cover the entire div */
+    background-position: center;
+    filter: brightness(50%); /* Adjust the brightness to create the fade effect */
+    z-index: -1; /* Ensure the image stays in the background */
+}
+
+.text-center {
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    z-index: 10; /* Ensure the text appears above the image */
+}
+/* For the image */
+.image-container {
+    display: inline-block; /* Ensures the image's length adjusts based on the content width */
+    width: auto; /* Automatically adjusts the width */
+    height: auto; /* Adjusts the height accordingly */
+}
+/* Ensure the image container and text are aligned next to each other */
+.flex {
+    display: flex; /* Use flexbox for layout */
+    gap: 20px; /* Space between text and image */
+}
+
+/* Ensure the image container adjusts properly with content */
+.image-container {
+    display: inline-block;
+    width: 100px; /* Adjust the width of the image as per your requirement */
+    height: auto;
+}
+
+/* Flex item for text content */
+.flex-1 {
+    flex: 1; /* This will make the text area take as much space as needed */
+}

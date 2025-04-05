@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Johanan Anton Pranesh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0a192f',
+                        secondary: '#112d4e',
+                        accent: '#3f72af',
+                        background: '#ffffff',
+                        text: '#000000'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-text font-sans">
+    
+    <header class="fixed w-full bg-primary text-white shadow-lg py-4 z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">
+                <a href="index.html">Quant Portfolio</a>
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-accent transition duration-300">About</a></li>
+                    <!-- <li><a href="all-projects.html" class="hover:text-accent transition duration-300">Projects</a></li> -->
+                    <a href="all-projects.html" class="hover:text-accent transition duration-300">Projects</a>
+                    <a href="https://www.linkedin.com/in/johanan-anton-pranesh/recent-activity/all/" class="hover:text-accent transition duration-300">Blog</a>
+                    <li><a href="mailto:johanananton@outlook.com" class="hover:text-accent transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="h-80 flex flex-col items-center justify-center bg-primary text-white text-center">
+        <h1 class="text-5xl font-extrabold">Johanan Anton Pranesh</h1>
+        <p class="mt-4 text-lg max-w-3xl">Quant Researcher | Financial Engineer | AI & Optimization Enthusiast</p>
+    </section>
+
+    <section class="py-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-secondary mb-6">Who Am I?</h2>
+            <p class="text-lg text-gray-700">I am a financial engineer with a deep-rooted passion for uncovering hidden market inefficiencies. My journey into this field began during the Global Financial Crisis of 2008, an experience that shaped my understanding of the financial markets and sparked my curiosity. What started as a simple exploration of data analysis evolved into an obsession with data science, leading me to pursue advanced quantitative research, machine learning, and optimization techniques to develop cutting-edge investment strategies.</p>
+            <p class="text-lg text-gray-700 mt-4">Along the way, I have had the honor of receiving a Human Rights Award and a Best Entrepreneur Award, two milestones that reflect my broader dedication to making a positive impact in every aspect of my life. These experiences only fueled my drive to dive deeper into the world of finance, ultimately guiding me towards quantitative finance.</p>
+            <p class="text-lg text-gray-700 mt-4">To build on this passion, I enrolled in Lehigh University, where I pursued a degree in Financial Engineering, gaining invaluable industry experience working at a hedge fund in New York City. My role there involved quantitative research, data science, and developing innovative strategies, which further solidified my interest in this field. I have had the opportunity to work on a variety of corporate-sponsored projects, including factor investing, NLP for CDS, TPLF (litigation financing), index creation and deployment, and machine learning optimization.</p>
+            <p class="text-lg text-gray-700 mt-4">During my time at the hedge fund, I developed a strong interest in alternative data and fixed income, which continues to drive my research today. My current goal is to publish papers on factor investing, TPLF, and other innovative strategies that aim to optimize the financial landscape.</p>
+            <p class="text-lg text-gray-700 mt-4">Beyond finance, I am passionate about running marathons for charity, competing in squash matches, and painting abstract ideas that mirror the complexity and beauty of the algorithms I create.</p>
+        </div>
+    </section>
+
+    <section class="py-16 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-secondary mb-6 text-center">Core Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Machine Learning</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Data Science</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Portfolio Optimization</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Factor Investing</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Reinforcement Learning</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">NLP & LLM</span>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="py-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-secondary mb-6">Beyond Work</h2>
+            <p class="text-lg text-gray-700">When I’m not coding or optimizing portfolios, you’ll find me:</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+                <span class="bg-gray-100 p-4 rounded-lg shadow border border-secondary">🏃 Running Charity Marathons</span>
+                <span class="bg-gray-100 p-4 rounded-lg shadow border border-secondary">🎨 Painting Abstract Ideas</span>
+                <span class="bg-gray-100 p-4 rounded-lg shadow border border-secondary">🏌️ Playing Golf & Squash</span>
+                <span class="bg-gray-100 p-4 rounded-lg shadow border border-secondary">✍️ Writing Thought Pieces</span>
+                <span class="bg-gray-100 p-4 rounded-lg shadow border border-secondary">✈️ Travelling Interesting Places</span>
+                <span class="bg-gray-100 p-4 rounded-lg shadow border border-secondary">📸 Messing around with Photography</span>
+            </div>
+            
+        </div>
+    </section>
+    <div class="text-center mt-6">
+        <a href="index.html#collage" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+            ← Back to Portfolio
+        </a>
+    </div>
+    <div class="text-center mt-6">
+        <a href="all-projects.html" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+            View My Projects →
+        </a>
+    </div>
+
+    <footer class="text-center py-6 bg-primary text-white mt-10">
+        © 2025 Quant Portfolio. All rights reserved.
+    </footer>
+</body>
+</html>

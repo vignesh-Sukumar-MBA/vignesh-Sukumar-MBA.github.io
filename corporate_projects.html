@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Sponsor Projects | Johanan Anton Pranesh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#112d4e',
+                        secondary: '#0a192f',
+                        accent: '#3f72af',
+                        background: '#ffffff',
+                        text: '#000000'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom style for project description on hover */
+        .project-name {
+            position: relative;
+            display: inline-block;
+        }
+
+        .project-name .project-description {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 8px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            z-index: 10;
+        }
+
+        .project-name:hover .project-description {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body class="bg-background text-text font-sans">
+    
+    <header class="fixed w-full bg-primary text-white shadow-lg py-4 z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">
+                <a href="index.html">Quant Portfolio</a>
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-accent transition duration-300">About</a></li>
+                    <!-- <li><a href="all-projects.html" class="hover:text-accent transition duration-300">Projects</a></li> -->
+                    <a href="all-projects.html" class="hover:text-accent transition duration-300">Projects</a>
+                    <a href="https://www.linkedin.com/in/johanan-anton-pranesh/recent-activity/all/" class="hover:text-accent transition duration-300">Blog</a>
+                    <li><a href="mailto:johanananton@outlook.com" class="hover:text-accent transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="h-60 flex flex-col items-center justify-center bg-primary text-white text-center">
+        <h1 class="text-4xl font-extrabold">Corporate Sponsored Projects</h1>
+        <p class="mt-4 text-lg">Industry Collaborations and Applied Research</p>
+    </section>
+
+    <section class="py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-secondary mb-6">Highlighted Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 with link -->
+                <a href="data/multi factor investing.pdf" class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition block">
+                    <h3 class="text-xl font-bold text-secondary">MultiFactor Investing</h3>
+                    <p class="mt-2 text-gray-700">Collaborating with a Portfolio Manager from Hamilton Lane</p>
+                </a>
+                <!-- Project 2 with link -->
+                <a href="#" class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition block">
+                    <h3 class="text-xl font-bold text-secondary">NLP in CDS Prediction</h3>
+                    <p class="mt-2 text-gray-700">Collaborated with Senior Quant Associate at Morgan Stanley</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-6 text-center">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-secondary mb-6">Projects</h2>
+            <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+                <thead class="bg-secondary text-white">
+                    <tr>
+                        <th class="py-3 px-4">Programming Languages</th>
+                        <th class="py-3 px-4">Corporate Sponsor</th>
+                        <th class="py-3 px-4">Project Name</th>
+                        <th class="py-3 px-4">Topics</th>
+                        <th class="py-3 px-4">GitHub</th>
+                        <th class="py-3 px-4">Materials</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Python, R</td>
+                        <td class="py-3 px-4">Portfolio Manager at Hamilton Lane</td>
+                        <td class="py-3 px-4">
+                            <span class="project-name">MultiFactor Investing
+                                <span class="project-description">
+                                    Used reinforcement algorithm and insights from alternative data, back testing, & Monte Carlo simulations 
+                                    to recommend portfolios that provide downside protection while hedging factor decay, and maximizing returns
+                                </span>
+                            </span>
+                        </td>
+                        <td class="py-3 px-4">Portfolio Optimization, Factor Investing, Backtesting, Monte Carlo Simulation</td>
+                        <td class="py-3 px-4 text-gray-500">Private</td>
+                        <td class="py-3 px-4"><a href="data/multi factor investing.pptx" class="underline text-blue-500">PPT Presentation</a></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Python, SQL</td>
+                        <td class="py-3 px-4">Attorney at McGuireWoods LLP</td>
+                        <td class="py-3 px-4">
+                            <span class="project-name">Third Party Litigation Finance derivative pricing
+                                <span class="project-description">
+                                    Worked on a new derivative’s mathematical models based on the development of Black-Scholes-Merton, 
+                                    Altman Z-Score, and machine learning models to price Third Party Litigation Financing contracts
+                                </span>
+                            </span>
+                        </td>
+                        <td class="py-3 px-4">TPLF, LLM, NLP, Derivative Pricing, Black Sholes, Alternative Data</td>
+                        <td class="py-3 px-4 text-gray-500">Private</td>
+                        <td class="py-3 px-4"><a href="data/TPLF.pdf" class="underline text-blue-500">Concept paper</a></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Python, SQL</td>
+                        <td class="py-3 px-4">Senior Quant Analyst at Morgan Stanley</td>
+                        <td class="py-3 px-4">
+                            <span class="project-name">NLP for Predicting Credit Default Swaps Spreads
+                                <span class="project-description">
+                                    Leveraged Natural Language Processing (NLP) on earning call transcripts to analyze and predict movement 
+                                    in asset prices, specifically made for Credit Default Swaps (CDS)
+                                </span>
+                            </span>
+                        </td>
+                        <td class="py-3 px-4">NLP, CDS, Portfolio Optimization, Sentiment Analysis, TD-IDF</td>
+                        <td class="py-3 px-4 text-gray-500">Private</td>
+                        <td class="py-3 px-4"><a href="#" class="underline text-blue-500">NA</a></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Python, SQL, HTML</td>
+                        <td class="py-3 px-4">Former CEO of S&P Global</td>
+                        <td class="py-3 px-4">
+                            <span class="project-name">PA 100 Index
+                                <span class="project-description">
+                                    Developed a new index that tracks the performance of the top 100 companies in PA
+                                </span>
+                            </span>
+                        </td>
+                        <td class="py-3 px-4">Index Development, Index Analysis</td>
+                        <td class="py-3 px-4 text-gray-500">Private</td>
+                        <td class="py-3 px-4"><a href="https://pa-index.lehigh.edu/" class="underline text-blue-500">Index Website</a></td>
+                    </tr>
+                    
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Python, SQL</td>
+                        <td class="py-3 px-4">Quant at Barclays</td>
+                        <td class="py-3 px-4">
+                            <span class="project-name">Machine Learning Interpretability (collaborated for limited time)
+                                <!-- <span class="project-description">
+                                    Worked on improving the interpretability of machine learning models for financial applications.
+                                </span> -->
+                            </span>
+                        </td>
+                        <td class="py-3 px-4">Machine Learning, Fundamental Data, Sentiment Data, Gradient Descent</td>
+                        <td class="py-3 px-4 text-gray-500">Private</td>
+                        <td class="py-3 px-4"><a href="#" class="underline text-blue-500">restricted</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <div class="text-center mt-6">
+        <a href="index.html#collage" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+            ← Back to Portfolio
+        </a>
+    </div>
+    <div class="text-center mt-6">
+        <a href="all-projects.html" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+            View All Projects →
+        </a>
+    </div>
+
+    <footer class="text-center py-6 bg-primary text-white mt-10">
+        © 2025 Quant Portfolio. All rights reserved.
+    </footer>
+</body>
+</html>

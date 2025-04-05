@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Projects | Johanan Anton Pranesh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0a192f',
+                        secondary: '#112d4e',
+                        accent: '#3f72af',
+                        background: '#ffffff',
+                        text: '#000000',
+                        completed: '#16a34a',
+                        inprogress: '#eab308',
+                        pending: '#dc2626'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-text font-sans">
+    
+    <header class="fixed w-full bg-primary text-white shadow-lg py-4 z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">
+                <a href="index.html">Quant Portfolio</a>
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-accent transition duration-300">About</a></li>
+                    <!-- <li><a href="all-projects.html" class="hover:text-accent transition duration-300">Projects</a></li> -->
+                    <a href="all-projects.html" class="hover:text-accent transition duration-300">Projects</a>
+                    <a href="https://www.linkedin.com/in/johanan-anton-pranesh/recent-activity/all/" class="hover:text-accent transition duration-300">Blog</a>
+                    <li><a href="mailto:johanananton@outlook.com" class="hover:text-accent transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="h-60 flex flex-col items-center justify-center bg-primary text-white text-center">
+        <h1 class="text-4xl font-extrabold">Personal Projects</h1>
+        <p class="mt-4 text-lg">Exploring Quantitative Research, Machine Learning, Optimization, and AI agent</p>
+    </section>
+
+    <section class="py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-secondary mb-6">Highlighted Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 with link -->
+                <a href="data/SVRG.pdf" class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition block">
+                    <h3 class="text-xl font-bold text-secondary">Hybrid approaches in Portfolio Management</h3>
+                    <p class="mt-2 text-gray-700">Exploring Convex optimization for Portfolio Management</p>
+                </a>
+                <!-- Project 2 with link -->
+                <a href="data/Johanan_ISE Final Project.pdf" class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition block">
+                    <h3 class="text-xl font-bold text-secondary">Factor Decay</h3>
+                    <p class="mt-2 text-gray-700">Testing if Data mining for factors help capture alpha</p>
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="py-12 px-6 text-center">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-secondary mb-6">All Projects</h2>
+            <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+                <thead class="bg-secondary text-white">
+                    <tr>
+                        <th class="py-3 px-4">Programming Languages</th>
+                        <th class="py-3 px-4">Project Name</th>
+                        <th class="py-3 px-4">Topics</th>
+                        <th class="py-3 px-4">Status</th>
+                        <th class="py-3 px-4">GitHub</th>
+                        <th class="py-3 px-4">Materials</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Python</td>
+                        <td class="py-3 px-4">Hybrid Approaches to Portfolio Optimization: Integrating Bandit Algorithms and SVRG for Factor Exposures</td>
+                        <td class="py-3 px-4">Machine Learning, Gradient Descent, SVRG, Reinforcement algorithm, Portfolio optimization</td>
+                        <td class="py-3 px-4 text-white bg-completed rounded-lg">Completed</td>
+                        <td class="py-3 px-4 text-blue-500"><a href="https://github.com/JohananAntonPranesh/Factor-Decay" class="underline">Public</a></td>
+                        <td class="py-3 px-4"><a href="data/SVRG.pdf" class="underline text-blue-500">Research PDF</a></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Python</td>
+                        <td class="py-3 px-4">Study of Factor Decay & Portfolio Optimization</td>
+                        <td class="py-3 px-4">Factor Investing, Factor Decay, Data Mining, PCA</td>
+                        <td class="py-3 px-4 text-white bg-completed rounded-lg">Completed</td>
+                        <td class="py-3 px-4 text-blue-500"><a href="https://github.com/JohananAntonPranesh/SVRG_portfolio_optimization-public-" class="underline">Public</a></td>
+                        <td class="py-3 px-4"><a href="data/Johanan_ISE Final Project.pdf" class="underline text-blue-500">Research PDF</a></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Python, Go</td>
+                        <td class="py-3 px-4">Manus AI agent optimization for Quant Finance</td>
+                        <td class="py-3 px-4">LLM, AI agent, Optimization</td>
+                        <td class="py-3 px-4 text-white bg-inprogress rounded-lg">In progress</td>
+                        <td class="py-3 px-4 text-blue-500"><a href="#"" class="underline">Private</a></td>
+                        <td class="py-3 px-4"><a href="#" class="underline text-blue-500">No material yet</a></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Python</td>
+                        <td class="py-3 px-4">S1: Simple Test-Time Scaling for Quantitative Finance</td>
+                        <td class="py-3 px-4">Alternative Data Processing, Quant Finance AI agent, Optimization</td>
+                        <td class="py-3 px-4 text-white bg-inprogress rounded-lg">In progress</td>
+                        <td class="py-3 px-4 text-blue-500"><a href="https://github.com/JohananAntonPranesh/s1" class="underline">Public</a></td>
+                        <td class="py-3 px-4"><a href="#" class="underline text-blue-500">No material yet</a></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Python, Go</td>
+                        <td class="py-3 px-4">Enhancing Investment Strategies Using MinIO for Efficient Data Storage and Management</td>
+                        <td class="py-3 px-4">Data Storage, Data Management, Deployment & Monitoring, Data Warehousing</td>
+                        <td class="py-3 px-4 text-white bg-pending rounded-lg">Pending</td>
+                        <td class="py-3 px-4 text-blue-500"><a href="https://github.com/JohananAntonPranesh/minio-playing_around" class="underline">Public</a></td>
+                        <td class="py-3 px-4"><a href="#" class="underline text-blue-500">No material yet</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <div class="text-center mt-6">
+        <a href="index.html#collage" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+            ← Back to Portfolio
+        </a>
+    </div>
+    <div class="text-center mt-6">
+        <a href="all-projects.html" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+            View All Projects →
+        </a>
+    </div>
+    <footer class="text-center py-6 bg-primary text-white mt-10">
+        © 2025 Quant Portfolio. All rights reserved.
+    </footer>
+</body>
+</html>

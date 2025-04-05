@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Johanan Anton Pranesh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0a192f',
+                        secondary: '#112d4e',
+                        accent: '#3f72af',
+                        background: '#ffffff',
+                        text: '#000000'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-text font-sans">
+    
+    <header class="fixed w-full bg-primary text-white shadow-lg py-4 z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">
+                <a href="index.html">Quant Portfolio</a>
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-accent transition duration-300">About</a></li>
+                    <!-- <li><a href="all-projects.html" class="hover:text-accent transition duration-300">Projects</a></li> -->
+                    <a href="all-projects.html" class="hover:text-accent transition duration-300">Projects</a>
+                    <a href="https://www.linkedin.com/in/johanan-anton-pranesh/recent-activity/all/" class="hover:text-accent transition duration-300">Blog</a>
+                    <li><a href="mailto:johanananton@outlook.com" class="hover:text-accent transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="h-60 flex flex-col items-center justify-center bg-primary text-white text-center">
+        <h1 class="text-4xl font-extrabold">Professional Experience</h1>
+        <p class="mt-4 text-lg">Quantitative Research, Data Science, and Machine Learning</p>
+    </section>
+
+    <section class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="space-y-8">
+            <!-- Experience Item -->
+            <div class="flex items-center bg-gray-100 p-6 rounded-lg shadow-md">
+                <img src="data/King_Street_Capital_Management_logo_2024.jpg" alt="Company Logo" class="w-24 h-24 object-contain mr-6">
+                <div>
+                    <h3 class="text-xl font-bold text-secondary">Data Science Intern | King Street Capital Management LP | Hedge Fund</h3>
+                    <p class="mt-2 text-gray-700">Developed Framework & model for KPI Prediction, implemented alternative data strategies, and learnt about Optimization</p>
+                    <ul class="mt-2 text-gray-700">
+                        <li>▪ Converted unstructured alternative data into structured data & utilized to predict KPI growth/decline</li>
+                        <li>▪ Back testing on 14 million+ survey responses for 3000+ companies across 84 industries</li>
+                        <li>▪ Created a framework based on a unique methodology to translate data signals into investable actions</li>
+                        <li>▪ Worked with the hedge fund’s research team in front office, providing insight from alternative data</li>
+                    </ul>
+                    <div class="flex flex-wrap mt-3">
+                        <span class="bg-accent text-white px-3 py-1 rounded-lg mr-2 mb-2">Data Science</span>
+                        <span class="bg-accent text-white px-3 py-1 rounded-lg mr-2 mb-2">Python</span>
+                        <span class="bg-accent text-white px-3 py-1 rounded-lg mr-2 mb-2">SQL</span>
+                        <span class="bg-accent text-white px-3 py-1 rounded-lg mr-2 mb-2">Alternative Data</span>
+                        <span class="bg-accent text-white px-3 py-1 rounded-lg mr-2 mb-2">Fixed Income Prediction</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add more experience items here -->
+        </div>
+    </section>
+
+    <div class="text-center mt-6">
+        <a href="index.html#collage" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+            ← Back to Portfolio
+        </a>
+    </div>
+
+    <footer class="text-center py-6 bg-primary text-white mt-10">
+        © 2025 Quant Portfolio. All rights reserved.
+    </footer>
+</body>
+</html>
