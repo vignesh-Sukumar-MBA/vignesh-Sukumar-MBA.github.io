@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Projects | Johanan Anton Pranesh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0a192f',
+                        secondary: '#112d4e',
+                        accent: '#3f72af',
+                        background: '#ffffff',
+                        text: '#000000',
+                        completed: '#16a34a',
+                        inprogress: '#eab308',
+                        pending: '#dc2626'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-text font-sans">
+    
+    <header class="fixed w-full bg-primary text-white shadow-lg py-4 z-50 transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <!-- <h1 class="text-2xl font-bold">Quant Portfolio</h1> -->
+            <h1 class="text-2xl font-bold">
+                <a href="https://vignesh-sukumar-mba.github.io/index.html" class="text-2xl">
+                    Professional Website
+                </a>
+            </h1>            
+            
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-accent transition duration-300">About</a></li>
+                    <!-- <li><a href="all-projects.html" class="hover:text-accent transition duration-300">Projects</a></li> -->
+                    <a href="certificate.html" class="hover:text-accent transition duration-300">certification</a>
+                    <a href="work.html"" class="hover:text-accent transition duration-300">Professional Experience</a>
+                    <li><a href="email link" class="hover:text-accent transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="h-60 flex flex-col items-center justify-center bg-primary text-white text-center">
+        <h1 class="text-4xl font-extrabold">Certifications</h1>
+        <p class="mt-4 text-lg">Certifications, Courses, and Achievements</p>
+    </section>
+
+    <section class="py-12 px-6 text-center">
+        <div class="max-w-5xl mx-auto">
+            <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+                <thead class="bg-secondary text-white">
+                    <tr>
+                        <th class="py-3 px-4">Certificate Name</th>
+                        <th class="py-3 px-4">Institution</th>
+                        <th class="py-3 px-4">Field</th>
+                        <th class="py-3 px-4">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Advanced Data Science Certification</td>
+                        <td class="py-3 px-4">Coursera</td>
+                        <td class="py-3 px-4">Data Science</td>
+                        <td class="py-3 px-4 text-white bg-completed rounded-lg">Completed</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Financial Modeling and Analysis</td>
+                        <td class="py-3 px-4">Udemy</td>
+                        <td class="py-3 px-4">Finance</td>
+                        <td class="py-3 px-4 text-white bg-completed rounded-lg">Completed</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Machine Learning Specialization</td>
+                        <td class="py-3 px-4">Coursera</td>
+                        <td class="py-3 px-4">Machine Learning</td>
+                        <td class="py-3 px-4 text-white bg-completed rounded-lg">Completed</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3 px-4">Blockchain for Business</td>
+                        <td class="py-3 px-4">edX</td>
+                        <td class="py-3 px-4">Blockchain</td>
+                        <td class="py-3 px-4 text-white bg-pending rounded-lg">Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Link to view certificates -->
+            <div class="mt-8">
+                <a href="path/to/your/certificates.pdf" target="_blank" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+                    View My Certificates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <<div class="text-center mt-6">
+        <a href="index.html" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+            ← Back to main page
+        </a>
+    </div>
+    <div class="text-center mt-6">
+        <a href="work.html" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
+            View My Experience →
+        </a>
+    </div>
+    <footer class="text-center py-6 bg-primary text-white mt-10">
+        © 2025 Quant Portfolio. All rights reserved.
+    </footer>
+</body>
+</html>
