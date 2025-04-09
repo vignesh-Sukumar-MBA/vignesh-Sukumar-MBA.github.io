@@ -24,7 +24,6 @@
         body {
             scroll-behavior: smooth;
         }
-        
     </style>
 </head>
 <body class="bg-background text-text font-sans">
@@ -32,19 +31,16 @@
     <!-- Navigation Bar -->
     <header class="fixed w-full bg-primary text-white shadow-lg py-4 z-50 transition-all duration-300">
         <div class="container mx-auto flex justify-between items-center px-6">
-            <!-- <h1 class="text-2xl font-bold">Quant Portfolio</h1> -->
             <h1 class="text-2xl font-bold">
                 <a href="https://vignesh-sukumar-mba.github.io/index.html" class="text-2xl">
                     Professional Website
                 </a>
             </h1>            
-            
             <nav>
                 <ul class="flex space-x-6">
                     <li><a href="#about" class="hover:text-accent transition duration-300">About</a></li>
-                    <!-- <li><a href="all-projects.html" class="hover:text-accent transition duration-300">Projects</a></li> -->
-                    <a href="certificate.html" class="hover:text-accent transition duration-300">certification</a>
-                    <a href="work.html"" class="hover:text-accent transition duration-300">Professional Experience</a>
+                    <li><a href="certificate.html" class="hover:text-accent transition duration-300">certification</a></li>
+                    <li><a href="work.html" class="hover:text-accent transition duration-300">Professional Experience</a></li>
                     <li><a href="email link" class="hover:text-accent transition duration-300">Contact</a></li>
                 </ul>
             </nav>
@@ -52,33 +48,26 @@
     </header>
     
     <!-- Hero Section -->
-    <!-- <section class="h-screen flex flex-col items-center justify-center bg-primary text-white text-center relative overflow-hidden">
-        <div class="absolute inset-0 bg-blue-900 opacity-40 animate-pulse"></div>
-        <div class="relative opacity-0 animate-fadeInUp">
-            <h1 class="text-5xl font-extrabold">Johanan Anton Pranesh</h1>
-            <p class="mt-4 text-lg">An MBA graduate with 3+ years of hands-on experience in digital and programmatic advertising, delivering data-driven campaigns across Meta, Google, LinkedIn, and DSPs with a consistent focus on performance and ROI.</p>
-            <div class="mt-6 space-x-4">
-                <a href="data/Johanan Anton Pranesh CV.pdf" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">Resume</a>
-                <a href="#about" class="px-6 py-3 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-primary transition">Click to Know More</a>
-            </div>
-        </div>
-    </section> -->
     <section class="h-screen flex flex-col items-center justify-center bg-primary text-white text-center relative overflow-hidden">
         <div class="absolute inset-0 bg-blue-900 opacity-40 animate-pulse"></div>
-        <div class="relative opacity-0 animate-fadeInUp">
+        <div class="relative opacity-0 animate-fadeInUp max-w-3xl mx-auto px-4">
             <h1 class="text-5xl font-extrabold">Vignesh Sukumar</h1>
-            <p class="mt-4 text-lg">An MBA graduate with 3+ years of hands-on experience in digital and programmatic advertising, delivering data-driven campaigns across Meta, Google, LinkedIn, and DSPs with a consistent focus on performance and ROI.</p>
+            <!-- Updated alignment to center with container width -->
+            <p class="mt-4 text-lg text-center">
+                An MBA graduate with 3+ years of hands-on experience in digital and programmatic advertising, delivering data-driven campaigns across Meta, Google, LinkedIn, and DSPs with a consistent focus on performance and ROI.
+            </p>
             <div class="mt-6 space-x-4">
                 <a href="data/Vignesh Resume - Social Media Coordinator - Copy.docx" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">Resume</a>
                 <a href="#about" id="knowMoreButton" class="px-6 py-3 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-primary transition">Click to Know More</a>
             </div>
         </div>
     </section>
+
     <!-- About Me Section -->
     <section id="about" class="py-24 px-6 text-center">
         <div class="max-w-3xl mx-auto opacity-0 animate-fadeInUp">
             <h2 class="text-4xl font-bold text-secondary mb-6">About Me</h2>
-            <p class="text-lg text-gray-700">I am a graduate student in Financial Engineering at Lehigh University, with a strong mathematical background and hands-on industry experience in data science at a hedge fund. Over the past 1.5 years, I have worked on several corporate-sponsored projects, collaborating with firms such as Morgan Stanley and Hamilton Lane. I currently lead a multifactor investing team, where we are developing a framework for factor investing. I am passionate about leveraging alternative data and optimizing machine learning methods to drive insights in finance.</p>
+            <p class="text-lg text-gray-700">An MBA graduate from University Canada West with a strong foundation in digital strategy and marketing analytics. I bring over 3 years of professional experience in social media and programmatic advertising, with hands-on expertise across Meta, Google Ads, LinkedIn, DV360, and Quantcast. I’ve successfully managed campaigns for 40+ global brands including Amazon, GG Poker, and American Express, achieving up to 300x ROAS. From scaling startups like 1By2 Café to generating thousands of high-quality leads, I combine strategic thinking with data-driven execution—consistently delivering impactful, results-oriented campaigns in fast-paced, high-growth environments.</p>
         </div>
         <div class="text-center mt-6">
             <a href="about.html" class="px-6 py-3 bg-accent text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
@@ -88,38 +77,61 @@
     </section>
     
     <!-- Collage Preview Section -->
-    <section id = "collage" class="py-24 bg-gray-200 text-center">
+    <section id="collage" class="py-24 bg-gray-200 text-center">
         <h2 class="text-4xl font-bold text-secondary mb-10">Skills</h2>
-    
-            <div class="max-w-5xl mx-auto">
-                <h2 class="text-3xl font-bold text-secondary mb-6 text-center">Core Skills</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                    <span class="bg-secondary p-4 rounded-lg shadow text-white">Machine Learning</span>
-                    <span class="bg-secondary p-4 rounded-lg shadow text-white">Data Science</span>
-                    <span class="bg-secondary p-4 rounded-lg shadow text-white">Portfolio Optimization</span>
-                    <span class="bg-secondary p-4 rounded-lg shadow text-white">Factor Investing</span>
-                    <span class="bg-secondary p-4 rounded-lg shadow text-white">Reinforcement Learning</span>
-                    <span class="bg-secondary p-4 rounded-lg shadow text-white">NLP & LLM</span>
-                </div>
-                
-            </div>
 
-            <div class="max-w-5xl mx-auto">
-                <h2 class="text-3xl font-bold text-secondary mb-6 text-center">other Skills</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                    <span class="bg-primary p-4 rounded-lg shadow text-white">Machine Learning</span>
-                    <span class="bg-primary p-4 rounded-lg shadow text-white">Data Science</span>
-                    <span class="bg-primary p-4 rounded-lg shadow text-white">Portfolio Optimization</span>
-                    <span class="bg-primary p-4 rounded-lg shadow text-white">Factor Investing</span>
-                    <span class="bg-primary p-4 rounded-lg shadow text-white">Reinforcement Learning</span>
-                    <span class="bg-primary p-4 rounded-lg shadow text-white">NLP & LLM</span>
-                    <span class="bg-primary p-4 rounded-lg shadow text-white">NLP & LLM</span>
-                </div>
-                
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-secondary mb-6 text-center">Hard Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Meta Ads</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Google Ads</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Salesforce Dot Com</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Quantcast Platform</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">PowerBi</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Programmatic Advertising</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Zoho CRM</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Linkedin Ads</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Google Tag Manager</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Google Analytics</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Google Keyword Planner</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Slack</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Jira</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Zendesk</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Godaddy Website Hosting</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Hubspot</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Microsoft Office 365</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Criteo</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Linkedin Helper</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">Hootsuite</span>
+                <span class="bg-secondary p-4 rounded-lg shadow text-white">DV360</span>
             </div>
-        
+        </div>
+
+        <div class="max-w-5xl mx-auto mt-10">
+            <h2 class="text-3xl font-bold text-secondary mb-6 text-center">Soft Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Teamwork</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Problem-Solving</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Leadership</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Time Management</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Analytical Thinking</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Creativity</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Collaboration</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Decision-Making</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Attention to Detail</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Multitasking</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Conflict Resolution</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Interpersonal Skills</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Presentation Skills</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Proactiveness</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Initiative</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Adaptibility</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Communication</span>
+                <span class="bg-primary p-4 rounded-lg shadow text-white">Customer Service</span>
+            </div>
+        </div>
     </section>
-    
+
     <!-- Contact Section -->
     <section id="contact" class="py-24 bg-secondary text-white text-center">
         <h2 class="text-4xl font-bold mb-6">Contact</h2>
@@ -130,10 +142,10 @@
             <a href="email address" class="text-accent hover:text-white transition">Email</a>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="text-center py-6 bg-primary text-white">© My Professional Website. Credits:Johanan Pranesh. All rights reserved.</footer>
-    
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             document.querySelectorAll(".animate-fadeInUp").forEach((el, index) => {
@@ -145,18 +157,13 @@
         });
     </script>
     <script>
-        // Get the "Click to Know More" button
         const knowMoreButton = document.getElementById('knowMoreButton');
-        
-        // Add event listener to trigger smooth scroll when the button is clicked
         knowMoreButton.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default anchor behavior
-            
-            // Scroll smoothly to the About section
+            event.preventDefault();
             const aboutSection = document.getElementById('collage');
             aboutSection.scrollIntoView({
                 behavior: 'smooth',
-                block: 'start' // Scroll to the top of the section
+                block: 'start'
             });
         });
     </script>
