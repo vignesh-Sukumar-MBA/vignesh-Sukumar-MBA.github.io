@@ -86,59 +86,338 @@
 
   <!-- Collage Preview Section -->
   <section id="collage" class="py-24 bg-gray-200 text-center">
+    <!-- Main Heading stays visible -->
     <h2 class="text-4xl font-bold text-secondary mb-10">Skills</h2>
-
+  
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold text-secondary mb-6 text-center">Hard Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Meta Ads</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Google Ads</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Salesforce Dot Com</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Quantcast Platform</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">PowerBi</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Programmatic Advertising</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Zoho CRM</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Linkedin Ads</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Google Tag Manager</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Google Analytics</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Google Keyword Planner</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Slack</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Jira</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Zendesk</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Godaddy Website Hosting</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Hubspot</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Microsoft Office 365</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Criteo</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Linkedin Helper</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">Hootsuite</span>
-        <span class="bg-secondary p-4 rounded-lg shadow text-white">DV360</span>
+  
+      <!-- HARD SKILLS DROPDOWN -->
+      <div class="w-full max-w-xl mx-auto">
+      <div class="cursor-pointer flex justify-between items-center bg-white px-6 py-2 rounded shadow mb-4" onclick="toggleDropdown('hardSkillsContent', 'hardIcon')">
+        <h2 class="text-2xl font-bold text-secondary">Hard Skills</h2>
+        <svg id="hardIcon" class="w-6 h-6 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </div>
+  
+      <div id="hardSkillsContent" class="hidden transition-all duration-300 ease-in-out mb-10">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <!-- Search & Social Media Parent Box -->
+<div class="col-span-1 md:col-span-1">
+  <div class="bg-secondary p-4 rounded-lg shadow text-white">
+    <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+      <div class="flex justify-between items-center cursor-pointer"
+           onclick="toggleDropdown('metaAdsList', 'metaIcon', 'metaBox')">
+        <span class="w-full text-center font-semibold">Search & Social Media</span>
+        <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub-boxes displayed below -->
+  <div id="metaAdsList" class="hidden mt-4 space-y-3">
+    <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Meta Ads</div>
+    <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Google Ads</div>
+    <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">LinkedIn Ads</div>
+  </div>
+</div>
+
+         <!-- Programmatic Parent Box -->
+         <div class="col-span-1 md:col-span-1">
+          <div class="bg-secondary p-4 rounded-lg shadow text-white">
+            <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+              <div class="flex justify-between items-center cursor-pointer"
+                   onclick="toggleDropdown('ProgrammaticList', 'metaIcon', 'metaBox')">
+                <span class="w-full text-center font-semibold">Programmatic</span>
+                <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Sub-boxes displayed below -->
+          <div id="ProgrammaticList" class="hidden mt-4 space-y-3">
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Quantcast Platform</div>
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Cretio</div>
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">DV360</div>
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Programmatic Advertising</div>
+          </div>
+        </div>
+
+                <!-- Reporting & Analytics Parent Box -->
+                <div class="col-span-1 md:col-span-1">
+                  <div class="bg-secondary p-4 rounded-lg shadow text-white">
+                    <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+                      <div class="flex justify-between items-center cursor-pointer"
+                           onclick="toggleDropdown('Reporting & Analytics List', 'metaIcon', 'metaBox')">
+                        <span class="w-full text-center font-semibold">Reporting & Analytics</span>
+                        <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Sub-boxes displayed below -->
+                  <div id="Reporting & Analytics List" class="hidden mt-4 space-y-3">
+                    <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Campaign Reporting</div>
+                    <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">PowerBi</div>
+                    <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Google Analytics</div>
+                    <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Microsoft Office 365</div>
+                  </div>
+                </div>
+
+        <!-- CRM Parent Box -->
+        <div class="col-span-1 md:col-span-1">
+          <div class="bg-secondary p-4 rounded-lg shadow text-white">
+            <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+              <div class="flex justify-between items-center cursor-pointer"
+                   onclick="toggleDropdown('CRMList', 'metaIcon', 'metaBox')">
+                <span class="w-full text-center font-semibold">CRM</span>
+                <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Sub-boxes displayed below -->
+          <div id="CRMList" class="hidden mt-4 space-y-3">
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Zoho CRM</div>
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Zendesk</div>
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Salesforce Dot Com</div>
+          </div>
+        </div>
+
+         <!-- Communication Parent Box -->
+         <div class="col-span-1 md:col-span-1">
+          <div class="bg-secondary p-4 rounded-lg shadow text-white">
+            <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+              <div class="flex justify-between items-center cursor-pointer"
+                   onclick="toggleDropdown('CommunicationList', 'metaIcon', 'metaBox')">
+                <span class="w-full text-center font-semibold">Communication</span>
+                <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Sub-boxes displayed below -->
+          <div id="CommunicationList" class="hidden mt-4 space-y-3">
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Slack</div>
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Jira</div>
+          </div>
+        </div>
+
+           <!-- Scheduling Parent Box -->
+           <div class="col-span-1 md:col-span-1">
+            <div class="bg-secondary p-4 rounded-lg shadow text-white">
+              <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+                <div class="flex justify-between items-center cursor-pointer"
+                     onclick="toggleDropdown('SchedulingList', 'metaIcon', 'metaBox')">
+                  <span class="w-full text-center font-semibold">Scheduling</span>
+                  <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Sub-boxes displayed below -->
+            <div id="SchedulingList" class="hidden mt-4 space-y-3">
+              <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">HubSpot</div>
+              <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Hootsuite</div>
+            </div>
+          </div>
+
+         <!-- Others Parent Box -->
+         <div class="col-span-1 md:col-span-1">
+          <div class="bg-secondary p-4 rounded-lg shadow text-white">
+            <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+              <div class="flex justify-between items-center cursor-pointer"
+                   onclick="toggleDropdown('OthersList', 'metaIcon', 'metaBox')">
+                <span class="w-full text-center font-semibold">Others</span>
+                <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-boxes displayed below -->
+          <div id="OthersList" class="hidden mt-4 space-y-3">
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">HubSpot</div>
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Hootsuite</div>
+          </div>
+        </div>
+        </div>
+    </div>
+  
+      <!-- SOFT SKILLS DROPDOWN -->
+      <div class="w-full max-w-xl mx-auto">
+      <div class="cursor-pointer flex justify-between items-center bg-white px-6 py-2 rounded shadow mb-4" onclick="toggleDropdown('softSkillsContent', 'softIcon')">
+        <h2 class="text-2xl font-bold text-secondary">Soft Skills</h2>
+        <svg id="softIcon" class="w-6 h-6 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+      </div>
+  
+      <div id="softSkillsContent" class="hidden transition-all duration-300 ease-in-out">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+
+     <!-- Relational Excellence Parent Box -->
+     <div class="col-span-1 md:col-span-1">
+      <div class="bg-secondary p-4 rounded-lg shadow text-white">
+        <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+          <div class="flex justify-between items-center cursor-pointer"
+               onclick="toggleDropdown('Relational Excellence List', 'metaIcon', 'metaBox')">
+            <span class="w-full text-center font-semibold">Relational Excellence</span>
+            <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sub-boxes displayed below -->
+      <div id="Relational Excellence List" class="hidden mt-4 space-y-3">
+        <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Communication</div>
+        <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Interpersonal Skills</div>
+        <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Customer Service</div>
+        <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Presentation Skills</div>
       </div>
     </div>
 
-    <div class="max-w-5xl mx-auto mt-10">
-      <h2 class="text-3xl font-bold text-secondary mb-6 text-center">Soft Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Teamwork</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Problem-Solving</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Leadership</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Time Management</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Analytical Thinking</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Creativity</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Collaboration</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Decision-Making</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Attention to Detail</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Multitasking</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Conflict Resolution</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Interpersonal Skills</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Presentation Skills</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Proactiveness</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Initiative</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Adaptibility</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Communication</span>
-        <span class="bg-primary p-4 rounded-lg shadow text-white">Customer Service</span>
+    <!-- Collaborative Strength Parent Box -->
+    <div class="col-span-1 md:col-span-1">
+      <div class="bg-secondary p-4 rounded-lg shadow text-white">
+        <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+          <div class="flex justify-between items-center cursor-pointer"
+               onclick="toggleDropdown('Collaborative Strength List', 'metaIcon', 'metaBox')">
+            <span class="w-full text-center font-semibold">Collaborative Strength</span>
+            <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sub-boxes displayed below -->
+      <div id="Collaborative Strength List" class="hidden mt-4 space-y-3">
+        <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Teamwork</div>
+        <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Collaboration</div>
+        <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Conflict Resolution</div>
+      </div>
+    </div>
+
+
+    <!-- Strategic Ownership Parent Box -->
+    <div class="col-span-1 md:col-span-1">
+      <div class="bg-secondary p-4 rounded-lg shadow text-white">
+        <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+          <div class="flex justify-between items-center cursor-pointer"
+               onclick="toggleDropdown('Strategic Ownership List', 'metaIcon', 'metaBox')">
+            <span class="w-full text-center font-semibold">Strategic Ownership</span>
+            <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sub-boxes displayed below -->
+      <div id="Strategic Ownership List" class="hidden mt-4 space-y-3">
+        <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Leadership</div>
+        <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Decision-Making</div>
+        <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Initiative</div>
+        <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Proactiveness</div>
+      </div>
+    </div>
+
+       <!-- Operational Efficiency Parent Box -->
+       <div class="col-span-1 md:col-span-1">
+        <div class="bg-secondary p-4 rounded-lg shadow text-white">
+          <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+            <div class="flex justify-between items-center cursor-pointer"
+                 onclick="toggleDropdown('Operational Efficiency List', 'metaIcon', 'metaBox')">
+              <span class="w-full text-center font-semibold">Operational Efficiency</span>
+              <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Sub-boxes displayed below -->
+        <div id="Operational Efficiency List" class="hidden mt-4 space-y-3">
+          <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Time Management</div>
+          <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Multitasking</div>
+          <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Attention to Detail</div>
+        </div>
+      </div>
+
+        <!-- Cognitive Agility Parent Box -->
+        <div class="col-span-1 md:col-span-1">
+          <div class="bg-secondary p-4 rounded-lg shadow text-white">
+            <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+              <div class="flex justify-between items-center cursor-pointer"
+                   onclick="toggleDropdown('Cognitive Agility List', 'metaIcon', 'metaBox')">
+                <span class="w-full text-center font-semibold">Cognitive Agility</span>
+                <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Sub-boxes displayed below -->
+          <div id="Cognitive Agility List" class="hidden mt-4 space-y-3">
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Problem-Solving</div>
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Analytical Thinking</div>
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Creativity</div>
+          </div>
+        </div>
+
+         <!-- Adaptive Intelligence Parent Box -->
+         <div class="col-span-1 md:col-span-1">
+          <div class="bg-secondary p-4 rounded-lg shadow text-white">
+            <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
+              <div class="flex justify-between items-center cursor-pointer"
+                   onclick="toggleDropdown('Adaptive Intelligence List', 'metaIcon', 'metaBox')">
+                <span class="w-full text-center font-semibold">Adaptive Intelligence</span>
+                <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Sub-boxes displayed below -->
+          <div id="Adaptive Intelligence List" class="hidden mt-4 space-y-3">
+            <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Adaptibility</div>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
   </section>
+  
+  <!-- JavaScript to handle both dropdowns -->
+  <script>
+    function toggleDropdown(contentId, iconId) {
+      const content = document.getElementById(contentId);
+      const icon = document.getElementById(iconId);
+      content.classList.toggle("hidden");
+      icon.classList.toggle("rotate-180");
+    }
+  </script>
+  
 
   <!-- Contact Section -->
   <section id="contact" class="py-24 bg-secondary text-white text-center">
