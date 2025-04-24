@@ -87,38 +87,34 @@
   <!-- Collage Preview Section -->
   <section id="collage" class="py-24 bg-gray-200 text-center">
     <!-- Main Heading stays visible -->
-    <h2 class="text-4xl font-bold text-secondary mb-10">Skills</h2>
+    <h2 class="text-4xl font-bold text-secondary mb-8">Skills</h2>
   
     <div class="max-w-5xl mx-auto">
   
       <!-- HARD SKILLS DROPDOWN -->
-      <div class="w-full max-w-xl mx-auto">
-      <div class="cursor-pointer flex justify-between items-center bg-white px-6 py-2 rounded shadow mb-4" onclick="toggleDropdown('hardSkillsContent', 'hardIcon')">
+      <div class="w-full max-w-xl mx-auto mb-6">
         <h2 class="text-2xl font-bold text-secondary">Hard Skills</h2>
-        <svg id="hardIcon" class="w-6 h-6 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-        </svg>
       </div>
-    </div>
-  
-      <div id="hardSkillsContent" class="hidden transition-all duration-300 ease-in-out mb-10">
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      
+      <div class="transition-all duration-300 ease-in-out mb-10">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+
           <!-- Search & Social Media Parent Box -->
 <div class="col-span-1 md:col-span-1">
   <div class="bg-secondary p-4 rounded-lg shadow text-white">
     <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
       <div class="flex justify-between items-center cursor-pointer"
-           onclick="toggleDropdown('metaAdsList', 'metaIcon', 'metaBox')">
+           onclick="toggleDropdown('SearchSocialMediaList', 'metaIcon1', 'metaBox1')">
         <span class="w-full text-center font-semibold">Search & Social Media</span>
-        <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        <svg id="metaIcon1" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="metaIconPath1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
         </svg>
       </div>
     </div>
   </div>
 
   <!-- Sub-boxes displayed below -->
-  <div id="metaAdsList" class="hidden mt-4 space-y-3">
+  <div id="SearchSocialMediaList" class="hidden mt-4 space-y-3">
     <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Meta Ads</div>
     <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">Google Ads</div>
     <div class="bg-white p-4 rounded-lg shadow text-black text-center font-bold">LinkedIn Ads</div>
@@ -130,10 +126,10 @@
           <div class="bg-secondary p-4 rounded-lg shadow text-white">
             <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
               <div class="flex justify-between items-center cursor-pointer"
-                   onclick="toggleDropdown('ProgrammaticList', 'metaIcon', 'metaBox')">
+                   onclick="toggleDropdown('ProgrammaticList', 'metaIcon2', 'metaBox2')">
                 <span class="w-full text-center font-semibold">Programmatic</span>
-                <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                <svg id="metaIcon2" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path id="metaIconPath2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                 </svg>
               </div>
             </div>
@@ -153,10 +149,10 @@
                   <div class="bg-secondary p-4 rounded-lg shadow text-white">
                     <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
                       <div class="flex justify-between items-center cursor-pointer"
-                           onclick="toggleDropdown('Reporting & Analytics List', 'metaIcon', 'metaBox')">
+                           onclick="toggleDropdown('Reporting & Analytics List', 'metaIcon3', 'metaBox3')">
                         <span class="w-full text-center font-semibold">Reporting & Analytics</span>
-                        <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        <svg id="metaIcon3" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path id="metaIconPath3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                         </svg>
                       </div>
                     </div>
@@ -176,10 +172,10 @@
           <div class="bg-secondary p-4 rounded-lg shadow text-white">
             <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
               <div class="flex justify-between items-center cursor-pointer"
-                   onclick="toggleDropdown('CRMList', 'metaIcon', 'metaBox')">
+                   onclick="toggleDropdown('CRMList', 'metaIcon4', 'metaBox4')">
                 <span class="w-full text-center font-semibold">CRM</span>
-                <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                <svg id="metaIcon4" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path id="metaIconPath4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                 </svg>
               </div>
             </div>
@@ -198,10 +194,10 @@
           <div class="bg-secondary p-4 rounded-lg shadow text-white">
             <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
               <div class="flex justify-between items-center cursor-pointer"
-                   onclick="toggleDropdown('CommunicationList', 'metaIcon', 'metaBox')">
+                   onclick="toggleDropdown('CommunicationList', 'metaIcon5', 'metaBox5')">
                 <span class="w-full text-center font-semibold">Communication</span>
-                <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                <svg id="metaIcon5" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path id="metaIconPath5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                 </svg>
               </div>
             </div>
@@ -219,10 +215,10 @@
             <div class="bg-secondary p-4 rounded-lg shadow text-white">
               <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
                 <div class="flex justify-between items-center cursor-pointer"
-                     onclick="toggleDropdown('SchedulingList', 'metaIcon', 'metaBox')">
+                     onclick="toggleDropdown('SchedulingList', 'metaIcon6', 'metaBox6')">
                   <span class="w-full text-center font-semibold">Scheduling</span>
-                  <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                  <svg id="metaIcon6" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="metaIconPath6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                   </svg>
                 </div>
               </div>
@@ -240,10 +236,10 @@
           <div class="bg-secondary p-4 rounded-lg shadow text-white">
             <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
               <div class="flex justify-between items-center cursor-pointer"
-                   onclick="toggleDropdown('OthersList', 'metaIcon', 'metaBox')">
+                   onclick="toggleDropdown('OthersList', 'metaIcon7', 'metaBox7')">
                 <span class="w-full text-center font-semibold">Others</span>
-                <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                <svg id="metaIcon7" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path id="metaIconPath7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                 </svg>
               </div>
             </div>
@@ -261,31 +257,27 @@
     </div>
   
       <!-- SOFT SKILLS DROPDOWN -->
-      <div class="w-full max-w-xl mx-auto">
-      <div class="cursor-pointer flex justify-between items-center bg-white px-6 py-2 rounded shadow mb-4" onclick="toggleDropdown('softSkillsContent', 'softIcon')">
+      <div class="w-full max-w-xl mx-auto mb-6">
         <h2 class="text-2xl font-bold text-secondary">Soft Skills</h2>
-        <svg id="softIcon" class="w-6 h-6 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-        </svg>
       </div>
-      </div>
-  
-      <div id="softSkillsContent" class="hidden transition-all duration-300 ease-in-out">
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      
+      <div class="transition-all duration-300 ease-in-out mb-10">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
 
      <!-- Relational Excellence Parent Box -->
      <div class="col-span-1 md:col-span-1">
       <div class="bg-secondary p-4 rounded-lg shadow text-white">
         <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
           <div class="flex justify-between items-center cursor-pointer"
-               onclick="toggleDropdown('Relational Excellence List', 'metaIcon', 'metaBox')">
+               onclick="toggleDropdown('Relational Excellence List', 'metaIcon8', 'metaBox8')">
             <span class="w-full text-center font-semibold">Relational Excellence</span>
-            <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            <svg id="metaIcon8" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="metaIconPath8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
             </svg>
           </div>
         </div>
       </div>
+
 
       <!-- Sub-boxes displayed below -->
       <div id="Relational Excellence List" class="hidden mt-4 space-y-3">
@@ -301,10 +293,10 @@
       <div class="bg-secondary p-4 rounded-lg shadow text-white">
         <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
           <div class="flex justify-between items-center cursor-pointer"
-               onclick="toggleDropdown('Collaborative Strength List', 'metaIcon', 'metaBox')">
+               onclick="toggleDropdown('Collaborative Strength List', 'metaIcon9', 'metaBox9')">
             <span class="w-full text-center font-semibold">Collaborative Strength</span>
-            <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            <svg id="metaIcon9" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="metaIconPath9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
             </svg>
           </div>
         </div>
@@ -324,10 +316,10 @@
       <div class="bg-secondary p-4 rounded-lg shadow text-white">
         <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
           <div class="flex justify-between items-center cursor-pointer"
-               onclick="toggleDropdown('Strategic Ownership List', 'metaIcon', 'metaBox')">
+               onclick="toggleDropdown('Strategic Ownership List', 'metaIcon10', 'metaBox10')">
             <span class="w-full text-center font-semibold">Strategic Ownership</span>
-            <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            <svg id="metaIcon10" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="metaIconPath10" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
             </svg>
           </div>
         </div>
@@ -347,10 +339,10 @@
         <div class="bg-secondary p-4 rounded-lg shadow text-white">
           <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
             <div class="flex justify-between items-center cursor-pointer"
-                 onclick="toggleDropdown('Operational Efficiency List', 'metaIcon', 'metaBox')">
+                 onclick="toggleDropdown('Operational Efficiency List', 'metaIcon11', 'metaBox11')">
               <span class="w-full text-center font-semibold">Operational Efficiency</span>
-              <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              <svg id="metaIcon11" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path id="metaIconPath11" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
               </svg>
             </div>
           </div>
@@ -369,10 +361,10 @@
           <div class="bg-secondary p-4 rounded-lg shadow text-white">
             <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
               <div class="flex justify-between items-center cursor-pointer"
-                   onclick="toggleDropdown('Cognitive Agility List', 'metaIcon', 'metaBox')">
+                   onclick="toggleDropdown('Cognitive Agility List', 'metaIcon12', 'metaBox12')">
                 <span class="w-full text-center font-semibold">Cognitive Agility</span>
-                <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                <svg id="metaIcon12" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path id="metaIconPath12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                 </svg>
               </div>
             </div>
@@ -391,10 +383,10 @@
           <div class="bg-secondary p-4 rounded-lg shadow text-white">
             <div id="metaBox" class="flex flex-col justify-center h-full transition-all duration-300">
               <div class="flex justify-between items-center cursor-pointer"
-                   onclick="toggleDropdown('Adaptive Intelligence List', 'metaIcon', 'metaBox')">
+                   onclick="toggleDropdown('Adaptive Intelligence List', 'metaIcon13', 'metaBox13')">
                 <span class="w-full text-center font-semibold">Adaptive Intelligence</span>
-                <svg id="metaIcon" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path id="metaIconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                <svg id="metaIcon13" class="w-4 h-4 transition-transform transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path id="metaIconPath13" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                 </svg>
               </div>
             </div>
@@ -412,15 +404,26 @@
   
   <!-- JavaScript to handle both dropdowns -->
   <script>
-    function toggleDropdown(contentId, iconId) {
+    function toggleDropdown(contentId, iconId, boxId) {
       const content = document.getElementById(contentId);
       const icon = document.getElementById(iconId);
+      const iconPath = document.getElementById(iconId + "Path");
+  
       content.classList.toggle("hidden");
-      icon.classList.toggle("rotate-180");
+  
+      icon.classList.toggle("rotate-45");
+  
+      if (!content.classList.contains("hidden")) {
+        // Show "-" (minus sign)
+        iconPath.setAttribute("d", "M20 12H4");
+      } else {
+        // Show "+" (plus sign)
+        iconPath.setAttribute("d", "M12 4v16m8-8H4");
+      }
     }
   </script>
+  </body>  
   
-
   <!-- Contact Section -->
   <section id="contact" class="py-24 bg-secondary text-white text-center">
     <h2 class="text-4xl font-bold mb-6">Contact</h2>
